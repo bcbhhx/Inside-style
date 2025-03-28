@@ -152,6 +152,8 @@ img {
   padding: .5rem;
   z-index: 99999999999999999999999999;
   box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px;
+  transition: all 1s ease;
+  
 }
 
 .headers .header_wrapper {
@@ -159,6 +161,7 @@ img {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  transition: all 1s ease;
 }
 
 .header_wrapper img {
@@ -192,6 +195,21 @@ img {
   transition: all .2s ease-in-out;
 }
 
+.headers .header_wrapper.open{
+  background-color: var(--tertiary);
+  border-radius: 5rem;
+  padding: 2rem;
+  position: fixed;
+  width: 80rem;
+  max-width: 100%;
+  z-index: 9999999;
+  margin: 0 auto;
+  left: 0%;
+  right:0;
+  transition: all 1s ease;
+  
+}
+
 
 
 /* -----------------BANNER------------------- */
@@ -200,7 +218,7 @@ img {
   /* padding-top: 13rem; */
   background: var(--secondary);
   text-align: center;
-  
+  max-height: 300rem;
 }
 
 .banner small {
@@ -468,6 +486,13 @@ img {
 
   }
 
+  .headers .header_wrapper.open{
+    padding: unset;
+    border-radius: unset;
+    position: unset;
+    
+  }
+
   .headers {
       position: fixed;
       width: 100%;
@@ -480,9 +505,13 @@ img {
       margin-right: 3rem;
   }
 
+ 
   .headers .toggle_menu span {
       display: flex;
   }
+
+  
+  
 
   .headers .toggle_menu {
       display: flex;
@@ -591,7 +620,7 @@ img {
   }
 
   .homeAbout h2::before {
-    width: 19rem;
+    width: 26rem;
   }
 
   .homeAbout_text p {
@@ -600,7 +629,7 @@ img {
 
   /* CATALOG MOBILE */
   .homeCatalog h2::after {
-    width: 33rem;
+    width: 39rem;
 
   }
 
